@@ -1,0 +1,64 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kategoriler genel düzenleme */
+#categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Her bir kategori için stil */
+.item {
+    background-color: #f0f1f6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Kategori başlıkları */
+.item h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Alt kategoriler ve input alanları */
+.item ul {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.item ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    border: 1px solid #808080;
+        padding: 8px 16px;
+        border-radius: 4px;
+        margin-top: 8px;
+}
+
+.item ul li input {
+    border: 1px solid #808080;
+        padding: 8px 16px;
+        border-radius: 4px;
+        margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
