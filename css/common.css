@@ -173,3 +173,7 @@ input {
   padding: 32px;
   gap: 44px;
 }
+
+.boxCSS {
+  flex-shrink: 0;
+}
