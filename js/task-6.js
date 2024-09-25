@@ -1,6 +1,6 @@
 // DOM Elemanları
-const createButton = document.querySelector("#create-button");
-const destroyButton = document.querySelector("#destroy-button");
+const createButton = document.querySelector("#Create-btn");
+const destroyButton = document.querySelector("#Destroy-btn");
 const input = document.querySelector("input");
 const boxesContainer = document.querySelector("#boxes");
 
