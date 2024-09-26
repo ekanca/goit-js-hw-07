@@ -15,6 +15,9 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   // Önceki kutuları temizle
   destroyBoxes();
+
+  // DocumentFragment oluşturuyoruz
+  const fragment = document.createDocumentFragment();
   let size = 30; // İlk kutunun boyutu
 
   for (let i = 0; i < amount; i++) {
@@ -23,9 +26,13 @@ function createBoxes(amount) {
     box.style.height = `${size}px`; // Kutunun yüksekliği
     box.style.backgroundColor = getRandomHexColor(); // Rastgele arka plan rengi
     box.classList.add("boxCSS"); // CSS sınıfı ekleniyor (stil için)
-    boxesContainer.appendChild(box); // Kutuyu kutu konteynerine ekle
+
+    fragment.appendChild(box); // Kutuyu fragment'e ekle
     size += 10; // Sonraki kutu için boyutu artır
   }
+
+  // Tüm kutuları bir kerede DOM'a ekle
+  boxesContainer.appendChild(fragment);
 }
 
 // Kutuları silme fonksiyonu
